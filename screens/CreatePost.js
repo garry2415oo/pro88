@@ -32,7 +32,7 @@ export default class CreatePost extends Component {
           var d = new Date()
           let postData = {
             caption: this.state.caption,
-            // author: firebase.auth().currentUser.displayName,
+          
             created_on: d.toString(),
             profile_image: this.state.profile_image,
             author_uid: firebase.auth().currentUser.uid,
